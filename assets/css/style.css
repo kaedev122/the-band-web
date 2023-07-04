@@ -14,7 +14,7 @@ html {
 
 /* Main */
 #main {
-
+    
 }
 
 #header {
@@ -83,18 +83,42 @@ html {
 
 #header .search-btn {
     float: right;
+    padding: 11px 22px;
+}
+
+#header .search-icon {
     color: #fff;
     font-size: 20px;
+}
+
+#header .mobile-menu-bar {
+    float: right;
     padding: 11px 22px;
+}
+
+
+#header .menu-icon {
+    color: #fff;
+    font-size: 20px;
 }
 
 #header > .search-btn:hover {
     background-color: rgb(244,67,54);
 }
 
+#header > .mobile-menu-bar:hover {
+    background-color: #ccc;
+}
+
+#header > .mobile-menu-bar:hover .menu-icon {
+    color:#000;
+}
+
 #slider {
     text-align: center;
     position: relative;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 46px;
     padding-top: 50%;
     background: url("../img/sliders/slider1.jpg") top center / cover no-repeat;
@@ -125,6 +149,7 @@ html {
 
 #content .section-content {
     width: 800px;
+    max-width: 100%;
     padding: 64px 16px;
     margin-left: auto;
     margin-right: auto;
@@ -274,6 +299,7 @@ html {
     align-items: center;
     flex-direction: column;
     background-color: rgba(0, 0, 0, 0.4);
+    z-index: 1;
 }
 
 .tickets-modal {
