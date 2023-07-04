@@ -43,12 +43,10 @@ mobileMenu.onclick = function() {
 ////////////////////////////////////////////////////////////////
 var menuItems = document.querySelectorAll("#navbar li a[href*='#']");
 for (const menuItem of menuItems) {
-    var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnavbar');
-    
     menuItem.onclick = function() {
+        var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnavbar');
         if (!isParentMenu) {
             header.style.height = null;
-        console.log(menuItem.nextElementSibling)
         }
     }
 }
