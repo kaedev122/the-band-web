@@ -45,7 +45,10 @@ var menuItems = document.querySelectorAll("#navbar li a[href*='#']");
 for (const menuItem of menuItems) {
     menuItem.onclick = function() {
         var isParentMenu = menuItem.nextElementSibling && menuItem.nextElementSibling.classList.contains('subnavbar');
-        if (!isParentMenu) {
+        if (isParentMenu) {
+            event.preventDefault();
+        }
+        else {
             header.style.height = null;
         }
     }

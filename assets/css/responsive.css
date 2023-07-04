@@ -22,7 +22,7 @@
         display: block;
     }
 
-    #navbar li:first-child {
+    #navbar > li:first-child {
         display: inline-block;
     }
 
@@ -32,6 +32,16 @@
 
     #navbar {
         display: block;
+    }
+
+    #navbar .subnavbar {
+        position: initial;
+        background-color: #333;
+    }
+
+    #navbar .subnavbar a {
+        padding: 12px 41px;
+        color:#fff;
     }
 
     .mobile-menu-bar {
