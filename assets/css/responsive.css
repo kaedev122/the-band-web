@@ -49,4 +49,31 @@
         top: 0;
         right: 0;
     }
+
+    #content .member-list {
+        flex-direction: column;
+    }
+
+    #content .member-img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .place-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .place-item {
+        width: 100% !important;
+        padding-top: 24px;
+    }
+    
+    #content .tour-container {
+        padding: 0;   
+    }
+    
+    .col-holder {
+        flex-direction: column;
+    }
 }
